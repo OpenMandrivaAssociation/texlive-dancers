@@ -1,3 +1,9 @@
+# revision 13293
+# category Package
+# catalog-ctan /fonts/dancers/dancers.mf
+# catalog-date 2008-11-24 17:20:15 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-dancers
 Version:	20081124
 Release:	1
@@ -43,6 +49,7 @@ In these cases, he is wearing a flag on his hat in the
 %files
 %{_texmfdistdir}/fonts/source/public/dancers/dancers.mf
 %{_texmfdistdir}/fonts/tfm/public/dancers/dancers.tfm
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ In these cases, he is wearing a flag on his hat in the
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
