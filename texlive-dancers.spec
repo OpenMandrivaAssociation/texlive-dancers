@@ -51,3 +51,17 @@ In these cases, he is wearing a flag on his hat in the
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081124-2
++ Revision: 750762
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081124-1
++ Revision: 718199
+- texlive-dancers
+- texlive-dancers
+- texlive-dancers
+- texlive-dancers
+
