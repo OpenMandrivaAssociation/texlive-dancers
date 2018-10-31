@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dancers
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Font for Conan Doyle's "The Dancing Men"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dancers/dancers.mf
