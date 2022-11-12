@@ -1,17 +1,11 @@
-# revision 13293
-# category Package
-# catalog-ctan /fonts/dancers/dancers.mf
-# catalog-date 2008-11-24 17:20:15 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-dancers
-Version:	20190228
+Version:	13293
 Release:	1
 Summary:	Font for Conan Doyle's "The Dancing Men"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dancers/dancers.mf
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dancers.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dancers.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ In these cases, he is wearing a flag on his hat in the
 'character'. The font is distributed as MetaFont source.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,24 +38,10 @@ In these cases, he is wearing a flag on his hat in the
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081124-2
-+ Revision: 750762
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081124-1
-+ Revision: 718199
-- texlive-dancers
-- texlive-dancers
-- texlive-dancers
-- texlive-dancers
-
