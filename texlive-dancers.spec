@@ -3,7 +3,7 @@ Version:	13293
 Release:	2
 Summary:	Font for Conan Doyle's "The Dancing Men"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/dancers/dancers.mf
+URL:		https://www.ctan.org/tex-archive/fonts/dancers/dancers.mf
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dancers.r%{version}.tar.xz
 BuildArch:	noarch
